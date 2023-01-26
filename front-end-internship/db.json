@@ -1,0 +1,60 @@
+{
+  "interns": [
+    {
+      "name": "Bird Ramsey",
+      "email": "birdramsey@nimon.com",
+      "internshipStart": "2023-07-01",
+      "internshipEnd": "2023-09-29",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Lillian Burgess",
+      "email": "lillianburgess@luxuria.com",
+      "internshipStart": "2023-07-01",
+      "internshipEnd": "2023-09-30"
+    },
+    {
+      "id": 3,
+      "name": "Kristie Cole",
+      "email": "kristiecole@quadeebo.com",
+      "internshipStart": "2022-07-01",
+      "internshipEnd": "2022-09-30"
+    },
+    {
+      "id": 4,
+      "name": "Leonor Cross",
+      "email": "leonorcross@gronk.com",
+      "internshipStart": "2022-07-01",
+      "internshipEnd": "2022-09-30"
+    },
+    {
+      "id": 5,
+      "name": "Marsh Mccall",
+      "email": "marshmccall@ultrimax.com",
+      "internshipStart": "2022-07-01",
+      "internshipEnd": "2022-09-30"
+    },
+    {
+      "name": "testedit",
+      "email": "test@test.com",
+      "internshipStart": "2023-01-01",
+      "internshipEnd": "2023-01-30",
+      "id": 6
+    },
+    {
+      "name": "test2edit",
+      "email": "test@test.com",
+      "internshipStart": "2022-12-31",
+      "internshipEnd": "2023-01-28",
+      "id": 7
+    },
+    {
+      "name": "test1",
+      "email": "test@tes.com",
+      "internshipStart": "2023-01-26",
+      "internshipEnd": "2023-01-28",
+      "id": 8
+    }
+  ]
+}
