@@ -7,7 +7,7 @@ interface Props {
 
 const BasicContainer: React.FC<Props> = ({ children, mainPage }) => {
   return (
-    <div className={`flex flex-col items-center justify-center w-screen h-screen ${mainPage ? "h-fit mt-8" : null}`}>
+    <div className={`flex flex-col items-center justify-center w-100% h-screen ${mainPage ? "h-fit mt-36" : null}`}>
       <div
         className={`w-3/6 rest:w-[95%] ${
           mainPage ? "rest:relative rest:top-[25%]" : null
