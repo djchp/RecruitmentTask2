@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const LogoArrowComp = () => {
   return (
     <>
-      <div className="absolute top-[2%] left-[2%]">
+      <div className="absolute top-[15px] left-[15px]">
         <svg
           width="80"
           height="80"
