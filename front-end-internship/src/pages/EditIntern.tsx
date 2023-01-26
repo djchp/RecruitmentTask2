@@ -74,7 +74,7 @@ export const EditIntern: React.FC = () => {
   return (
     <>
       <LogoArrowComp />
-      <BasicContainer>
+      <BasicContainer mainPage={false}>
         <div className="flex justify-between">
           <h2 className="text-3xl font-semibold">Edit Intern</h2>
         </div>

@@ -17,7 +17,7 @@ export const InternList: React.FC = () => {
   }, []);
 
   return (
-    <BasicContainer>
+    <>
       <div className="absolute top-[2%] left-[2%]">
         <svg
           width="80"
@@ -34,25 +34,27 @@ export const InternList: React.FC = () => {
           />
         </svg>
       </div>
-      <div className="flex justify-between">
-        <h2 className="text-3xl font-semibold">Interns</h2>
-        <NavLink
-          to={`/addIntern`}
-          className="bg-black py-2 px-8 text-white capitalize"
-        >
-          add Intern
-        </NavLink>
-      </div>
-      <div className="pt-8">
-        {interns.map((intern) => (
-          <SignleIntern
-            key={intern.id}
-            id={intern.id}
-            name={intern.name}
-            email={intern.email}
-          />
-        ))}
-      </div>
-    </BasicContainer>
+      <BasicContainer mainPage={true}>
+        <div className="flex justify-between">
+          <h2 className="text-3xl font-semibold">Interns</h2>
+          <NavLink
+            to={`/addIntern`}
+            className="bg-black py-2 px-8 text-white capitalize"
+          >
+            add Intern
+          </NavLink>
+        </div>
+        <div className="pt-8">
+          {interns.map((intern) => (
+            <SignleIntern
+              key={intern.id}
+              id={intern.id}
+              name={intern.name}
+              email={intern.email}
+            />
+          ))}
+        </div>
+      </BasicContainer>
+    </>
   );
 };

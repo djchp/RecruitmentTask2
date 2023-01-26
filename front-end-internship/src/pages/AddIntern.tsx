@@ -51,7 +51,7 @@ const AddIntern = () => {
   return (
     <>
       <LogoArrowComp />
-      <BasicContainer>
+      <BasicContainer mainPage={false}>
         <div className="flex justify-between">
           <h2 className="text-3xl font-semibold">Add Intern</h2>
         </div>

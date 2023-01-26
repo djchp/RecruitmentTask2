@@ -55,6 +55,13 @@
       "internshipStart": "2023-01-26",
       "internshipEnd": "2023-01-28",
       "id": 8
+    },
+    {
+      "name": "finaltest",
+      "email": "finaltest@test.com",
+      "internshipStart": "2023-01-14",
+      "internshipEnd": "2023-01-26",
+      "id": 9
     }
   ]
 }
