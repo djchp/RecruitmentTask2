@@ -19,9 +19,9 @@ export const EditIntern: React.FC = () => {
     register,
     handleSubmit,
     setValue,
-    formState: { errors },
+    formState: { errors, isDirty },
     getValues,
-    trigger
+    trigger,
   } = useForm({
     defaultValues: {
       name: "",
@@ -54,9 +54,15 @@ export const EditIntern: React.FC = () => {
       .split("-")
       .join("-");
 
-    const isDone = await editIntern(id!, data.name!, data.email!, dateStart, dateEnd);
+    const isDone = await editIntern(
+      id!,
+      data.name!,
+      data.email!,
+      dateStart,
+      dateEnd
+    );
     if (isDone) {
-      alert("Intern data successfully edited")
+      alert("Intern data successfully edited");
     }
   };
   const isDateCorrect = (startDate: any, endDate: any) => {
@@ -143,7 +149,9 @@ export const EditIntern: React.FC = () => {
                         getValues("internshipStart"),
                         getValues("internshipEnd")
                       ) || "Start date should be before End Date",
-                      onChange: () => {trigger(["internshipEnd", "internshipStart"])}
+                    onChange: () => {
+                      trigger(["internshipEnd", "internshipStart"]);
+                    },
                   })}
                   aria-invalid={errors.internshipStart ? "true" : "false"}
                 />
@@ -170,7 +178,9 @@ export const EditIntern: React.FC = () => {
                         getValues("internshipStart"),
                         getValues("internshipEnd")
                       ) || "End date should be after Start Date",
-                      onChange: () => {trigger(["internshipEnd", "internshipStart"])}
+                    onChange: () => {
+                      trigger(["internshipEnd", "internshipStart"]);
+                    },
                   })}
                   aria-invalid={errors.internshipEnd ? "true" : "false"}
                 />
@@ -185,7 +195,10 @@ export const EditIntern: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="text-white bg-black py-2 px-16 w-fit"
+              className={`${
+                isDirty ? "bg-black" : "bg-slate-700"
+              } text-white  py-2 px-16 w-fit`}
+              disabled={isDirty ? false : true}
             >
               Submit
             </button>

@@ -9,7 +9,7 @@ const AddIntern = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty },
     getValues,
     trigger,
   } = useForm({
@@ -166,7 +166,10 @@ const AddIntern = () => {
             </div>
             <button
               type="submit"
-              className="text-white bg-black py-2 px-16 w-fit"
+              className={`${
+                isDirty ? "bg-black" : "bg-slate-700"
+              } text-white  py-2 px-16 w-fit`}
+              disabled={isDirty ? false : true}
             >
               Submit
             </button>

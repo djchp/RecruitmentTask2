@@ -18,7 +18,8 @@ export const InternList: React.FC = () => {
 
   return (
     <>
-      <div className="absolute top-[2%] left-[2%]">
+      <div className="h-[15px] w-1"></div>
+      <div className="relative top-[2%] left-[15px]">
         <svg
           width="80"
           height="80"
